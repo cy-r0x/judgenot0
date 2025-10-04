@@ -1,0 +1,175 @@
+/* Import KaTeX styles */
+@import 'katex/dist/katex.min.css';
+
+/* Editor wrapper */
+.tiptap-editor-wrapper {
+  border: 1px solid #374151;
+  border-radius: 0.5rem;
+  background-color: #1f2937;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Menu bar */
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  background-color: #111827;
+  border-bottom: 1px solid #374151;
+  gap: 0.25rem;
+}
+
+.menu-group {
+  display: flex;
+  margin-right: 0.5rem;
+  border-right: 1px solid #4b5563;
+  padding-right: 0.5rem;
+}
+
+.menu-group:last-child {
+  border-right: none;
+}
+
+.menu-bar button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.125rem;
+  color: #d1d5db;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.menu-bar button:hover {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+.menu-bar button.active {
+  background-color: #f97316;
+  color: #f9fafb;
+}
+
+.menu-bar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.math-buttons button {
+  width: auto;
+  padding: 0 0.5rem;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* Editor content */
+.tiptap-editor {
+  padding: 1rem;
+  min-height: 300px;
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+.tiptap-editor-content {
+  outline: none;
+}
+
+/* Typography */
+.tiptap-editor h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f9fafb;
+}
+
+.tiptap-editor h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #f9fafb;
+}
+
+.tiptap-editor p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.tiptap-editor ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.tiptap-editor ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Block math styling */
+.tiptap-editor [data-type="mathBlock"] {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background-color: #111827;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+}
+
+/* Inline math styling */
+.tiptap-editor .math-inline {
+  padding: 0 0.25rem;
+}
+
+/* Code blocks */
+.tiptap-editor pre {
+  background-color: #111827;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  overflow-x: auto;
+  margin-bottom: 0.75rem;
+}
+
+.tiptap-editor code {
+  font-family: monospace;
+  background-color: #111827;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* Blockquotes */
+.tiptap-editor blockquote {
+  border-left: 3px solid #f97316;
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 0.75rem;
+  color: #9ca3af;
+}
+
+/* Focus state */
+.tiptap-editor .ProseMirror:focus {
+  outline: none;
+}
+
+/* Placeholder */
+.tiptap-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #6b7280;
+  pointer-events: none;
+  height: 0;
+}
+
+/* Selection */
+.tiptap-editor .ProseMirror-selectednode {
+  outline: 2px solid #f97316;
+}

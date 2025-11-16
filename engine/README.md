@@ -1,1 +1,0 @@
-##### Message Borker - RabbitMQ (amqplib)

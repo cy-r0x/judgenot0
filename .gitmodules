@@ -1,9 +1,9 @@
 [submodule "server"]
 	path = server
-	url = https://github.com/cy-r0x/JudgeBackend
+	url = https://github.com/cy-r0x/JudgeServer
 [submodule "engine"]
 	path = engine
-	url = https://github.com/cy-r0x/JudgeServer
+	url = https://github.com/cy-r0x/JudgeEngine
 [submodule "client"]
 	path = client
-	url = https://github.com/cy-r0x/judgenot0-nextjs
+	url = https://github.com/cy-r0x/JudgeClient

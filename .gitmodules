@@ -1,12 +1,19 @@
+[submodule "client"]
+    path = client
+    url = <repo-url>
+    branch = master
+
+[submodule "engine"]
+    path = engine
+    url = <repo-url>
+    branch = main
+
 [submodule "server"]
 	path = server
 	url = https://github.com/cy-r0x/JudgeServer
-	branch = main
 [submodule "engine"]
 	path = engine
 	url = https://github.com/cy-r0x/JudgeEngine
-	branch = main
 [submodule "client"]
 	path = client
 	url = https://github.com/cy-r0x/JudgeClient
-	branch = master

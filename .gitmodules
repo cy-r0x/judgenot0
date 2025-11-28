@@ -1,9 +1,12 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/cy-r0x/JudgeServer
+	branch = main
 [submodule "engine"]
 	path = engine
 	url = https://github.com/cy-r0x/JudgeEngine
+	branch = main
 [submodule "client"]
 	path = client
 	url = https://github.com/cy-r0x/JudgeClient
+	branch = master
